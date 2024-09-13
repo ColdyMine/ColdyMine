@@ -1,0 +1,25 @@
+Program kalkulator sederhana yang disajikan di atas adalah aplikasi konsol yang dirancang untuk melakukan operasi matematika dasar, seperti penjumlahan, pengurangan, perkalian, dan pembagian. Program ini menggunakan bahasa pemrograman C++ dan memanfaatkan beberapa fitur dasar serta library untuk menyediakan fungsionalitasnya. Berikut adalah penjelasan mendetail mengenai berbagai komponen program ini:
+
+Library dan Header
+Program ini dimulai dengan #include <iostream> dan #include <cmath>. Library iostream adalah bagian dari C++ Standard Library yang menyediakan fasilitas untuk input dan output. Library ini memungkinkan kita menggunakan objek std::cin untuk membaca input dari pengguna dan std::cout untuk menampilkan hasil ke terminal. Meskipun dalam program ini tidak ada fungsi dari cmath yang digunakan, biasanya library ini digunakan untuk operasi matematika yang lebih kompleks seperti fungsi eksponensial atau akar kuadrat.
+
+Pengambilan Input
+Program memulai dengan menampilkan menu pilihan operasi kepada pengguna menggunakan std::cout. Pengguna kemudian diminta untuk memasukkan pilihan operasi mereka, yang dibaca oleh std::cin ke dalam variabel pilihan. Selanjutnya, program meminta dua angka dari pengguna, yang juga dibaca melalui std::cin.
+
+Pernyataan Kondisional
+Program menggunakan pernyataan switch-case untuk menentukan operasi matematika yang akan dilakukan berdasarkan input pengguna. Ini adalah contoh dari penggunaan satu pernyataan kondisional. Berdasarkan nilai variabel pilihan, program melakukan salah satu dari empat operasi:
+
+Penjumlahan: Menggunakan operator +.
+Pengurangan: Menggunakan operator -.
+Perkalian: Menggunakan operator *.
+Pembagian: Menggunakan operator / dengan tambahan pengecekan untuk memastikan bahwa pembagi tidak sama dengan nol untuk menghindari pembagian dengan nol yang bisa menyebabkan kesalahan runtime.
+Error Handling
+Dalam kasus pembagian, program memeriksa apakah nilai pembagi (angka kedua) adalah nol. Jika iya, program menampilkan pesan kesalahan dan tidak mencoba melakukan pembagian, yang merupakan langkah penting untuk menangani kesalahan secara efektif.
+
+Output
+Hasil dari operasi yang dipilih ditampilkan di terminal dengan menggunakan std::cout. Jika pilihan yang dimasukkan tidak valid, program menampilkan pesan kesalahan.
+
+Secara keseluruhan, program ini adalah contoh sederhana namun efektif dari penggunaan C++ untuk membuat kalkulator yang menggabungkan fitur dasar input/output, operasi matematika, dan penanganan kesalahan. Program ini mengilustrasikan penggunaan pernyataan kondisional untuk menentukan jalur eksekusi berdasarkan input dan memberikan pemahaman dasar tentang struktur program C++.
+
+
+
